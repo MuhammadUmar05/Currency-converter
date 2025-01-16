@@ -1,0 +1,109 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+  color: #E8E8E8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(145deg, #1E2A32, #283E4A);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  width: 320px;
+  text-align: center;
+}
+
+h2 {
+  color: #00A8FF;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  color: #3DBE29;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #D1D1D1;
+  font-weight: bold;
+}
+
+input,
+select {
+  background-color: #2E3B4E;
+  color: #FFFFFF;
+  border: 1px solid #5A6A7A;
+  border-radius: 8px;
+  padding: 12px;
+  transition: border-color 0.3s ease;
+}
+
+select {
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  border-color: #00A8FF;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 168, 255, 0.5);
+}
+
+button {
+  background: linear-gradient(135deg, #007BFF, #0056B3);
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #0056B3, #003F7F);
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #FF4D4D;
+  font-weight: bold;
+}
+
+.currency-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.currency-flag {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
